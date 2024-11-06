@@ -1,0 +1,33 @@
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동적 페이지</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function showContent(section) {
+            document.getElementById("home").style.display = section === 'home' ? 'block' : 'none';
+            document.getElementById("about").style.display = section === 'about' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body onload="showContent('home')">
+    <nav>
+        <button onclick="showContent('home')">홈</button>
+        <button onclick="showContent('about')">소개</button>
+    </nav>
+    
+    <div id="home">
+        <h1>홈 페이지입니다!</h1>
+        <p>여기가 메인 페이지입니다.</p>
+    </div>
+    
+    <div id="about" style="display: none;">
+        <h1>소개 페이지입니다!</h1>
+        <p>이곳은 소개 페이지입니다.</p>
+    </div>
+</body>
+</html>
