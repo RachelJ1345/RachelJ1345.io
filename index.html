@@ -12,6 +12,7 @@
             document.getElementById("home").style.display = section === 'home' ? 'block' : 'none';
             document.getElementById("about").style.display = section === 'about' ? 'block' : 'none';
             document.getElementById("banner").style.display = section === 'banner' ? 'block' : 'none';
+            document.getElementById("number").style.display = section === 'number' ? 'block' : 'none';
         }
     </script>
 </head>
@@ -20,6 +21,7 @@
         <button onclick="showContent('home')">홈</button>
         <button onclick="showContent('about')">소개</button>
         <button onclick="showContent('banner')">배너</button>
+        <button onclick="showContent('number')">번호</button>
     </nav>
     
     <div id="home">
@@ -37,5 +39,11 @@
         <p>배너 이미지입니다.</p>
         <img src="img.png" alt="배너 이미지" class="banner-image">
     </div>
+
+    <div id="number">
+        <h1>번호 페이지입니다!</h1>
+        <p>번호 페이지입니다.</p>
+    </div>
+    
 </body>
 </html>
